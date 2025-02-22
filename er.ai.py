@@ -12,11 +12,11 @@ def analyze_patient():
     if "chest pain" in symptoms and int(heart_rate) > 90:
         result["Differential"] = "1. Heart attack, 2. Pneumonia"
         result["Plan"] = "Do ECG, chest X-ray, blood test"
-        result["Disposition"] = "Admit to hospital"
+        result["Disposition"] = "Admit to hospit30al"
     elif "fever" in symptoms and int(heart_rate) > 100 and int(blood_pressure.split("/")[0]) < 90:
-    result["Differential"] = "1. Sepsis, 2. Dehydration"
-    result["Plan"] = "Blood tests, IV fluids"
-    result["Disposition"] = "Admit to ICU if worsening"
+        result["Differential"] = "1. Sepsis, 2. Dehydration"
+        result["Plan"] = "Blood tests, IV fluids"
+        result["Disposition"] = "Admit to ICU if worsening"
     elif "shortness of breath" in symptoms and int(heart_rate) > 110:
         result["Differential"] = "1. Pulmonary embolism, 2. Asthma"
         result["Plan"] = "CT scan, oxygen, blood thinner if clot found"
